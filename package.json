@@ -1,0 +1,35 @@
+{
+  "name": "gatechain-sdk-js",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf lib/* && npx babel src -d lib"
+  },
+  "dependencies": {
+    "bech32": "^1.1.3",
+    "bignumber.js": "^8.1.1",
+    "bip32-ed25519": "0.0.3",
+    "bn": "^1.0.4",
+    "create-hash": "^1.2.0",
+    "eip55": "^2.1.0",
+    "is_js": "^0.9.0",
+    "q": "^1.5.1",
+    "random-buffer": "^0.1.0",
+    "safe-buffer": "^5.1.2",
+    "varstruct": "^6.1.2"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
